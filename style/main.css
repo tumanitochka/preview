@@ -23,12 +23,13 @@ body {
     height: 426px;
     border-radius: 40px;
     filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.35));
+}
 
-    & img {
-        border-radius: 40px 40px 0 40px;
+.cover {
+    border-radius: 40px 40px 40px 0;
         width: 100%;
         height: 80%;
-    }
+        transform: scale(-1, 1);
 }
 
 h4 {
@@ -38,7 +39,6 @@ h4 {
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    /* 27px */
 }
 
 p {
@@ -48,16 +48,9 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 18px */
 
     text-wrap: balance;
 }
-
-/* .card-foot {
-    background-image: url(../style/img/bg-foot.svg);
-    border-radius: 40px;
-    padding: 19px 24px;
-} */
 
 .card-foot {
     background-color: #fff;
@@ -65,6 +58,10 @@ p {
     padding: 20px 24px;
     position: relative;
     top: -50px;
+
+    & div {
+        width: 176px;
+    }
 
     & a > img {
         width: 48px;
