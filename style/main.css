@@ -62,7 +62,7 @@ p {
 .card-foot {
     background-color: #fff;
     border-radius: 0 40px 40px 40px;
-    padding: 19px 24px;
+    padding: 20px 24px;
     position: relative;
     top: -50px;
 
@@ -70,8 +70,17 @@ p {
         width: 48px;
         height: 48px;
     }
+
+    & a > img:hover {
+        filter: brightness(1.2);
+    }
+
+    & a > img:active {
+        filter: brightness(1);
+    }
 }
 
-.row {
+.align-items-center {
     display: flex;
+    align-items: center;
 }
