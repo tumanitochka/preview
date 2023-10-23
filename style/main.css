@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: " Poppins";
-    src: url(../fotools.ru/Poppins-Regular.ttf);
+    font-family: Poppins;
+    src: url(../style/font/Poppins/Poppins-Regular.ttf);
 }
 
 html,
@@ -22,7 +22,7 @@ body {
     width: 267px;
     height: 426px;
     border-radius: 40px;
-    background-color: #fff;
+    filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.35));
 
     & img {
         border-radius: 40px 40px 0 40px;
@@ -49,4 +49,29 @@ p {
     font-weight: 400;
     line-height: 150%;
     /* 18px */
+
+    text-wrap: balance;
+}
+
+/* .card-foot {
+    background-image: url(../style/img/bg-foot.svg);
+    border-radius: 40px;
+    padding: 19px 24px;
+} */
+
+.card-foot {
+    background-color: #fff;
+    border-radius: 0 40px 40px 40px;
+    padding: 19px 24px;
+    position: relative;
+    top: -50px;
+
+    & a > img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.row {
+    display: flex;
 }
